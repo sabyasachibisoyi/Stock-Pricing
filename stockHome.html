@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript" src="stock.js"></script>
+        <title>Stock Market Pricing</title>
+    </head>
+    <body>
+        <form onsubmit="return false">
+            <label for="stockId">Stock Symbol</label>
+            <input type="text" id="stockId" name="stockId"></input>
+            <input type="button" value="Submit" onclick="addStockName()"></input>
+        </form>
+        <div>
+            <div id="addedStockList"></div>
+            <div id="stockBarChart"></div>
+        </div>
+    </body>
+</html>
